@@ -9,7 +9,18 @@ writing a data to MySQL server from a react page
 
 
 ## mySQL server is needed to be set up before running:
-name , password and all neccessary details are found in the server/index.js
+
+### Config database
+goto server-react/bin/db.js then edit with yours
+<pre>
+
+    var connection = mysql.createConnection({
+        host: 'localhost',
+        user: 'root',
+        password: 'password',
+        database: 'comments_schema'
+    });
+</pre>
 
 
 
